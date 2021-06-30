@@ -2,20 +2,34 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: chartreuse;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fffb00;
+}
+
+h1 {
+  margin-left: 100px;
+  margin-right: 100px;
+  /*background-color: rgb(255, 0, 0);*/
+}
+
+nav img {
+  height: 30px;
+}
+
+body {
+  margin: 0px auto;
 }
 
 .app {
-  background-color: burlywood;
+  background-color: #99dabf;
   width: 100%;
   margin: 0px auto;
   display: -ms-grid;
@@ -24,4 +38,4 @@ header {
   -ms-grid-rows: 80px 1fr 80px;
       grid-template-rows: 80px 1fr 80px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */

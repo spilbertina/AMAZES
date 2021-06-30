@@ -1,0 +1,17 @@
+@import './header';
+
+body {
+  margin: 0px auto;
+}
+
+.app {
+  background-color: rgb(153, 218, 191);
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: 80px 1fr 80px;
+}

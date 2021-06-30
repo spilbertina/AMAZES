@@ -1,7 +1,23 @@
 header {
     grid-area: header;
-    background-color: chartreuse;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    background-color: rgb(255, 251, 0);
+}
+
+h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    /*background-color: rgb(255, 0, 0);*/
+}
+
+nav {
+    //    max-width: 30px;
+    //    max-height: 30px;
+
+    img {
+        height: 30px;
+
+    }
 }
