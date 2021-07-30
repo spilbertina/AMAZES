@@ -5,23 +5,33 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fffb00;
+  background-color: #00ff15;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-h1 {
-  margin-left: 100px;
-  margin-right: 100px;
-  /*background-color: rgb(255, 0, 0);*/
+header nav .blog {
+  margin-right: 200px;
 }
 
-nav img {
+header nav img {
   height: 30px;
+  margin-right: 20px;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.carousel img {
+  min-height: 700px;
+  width: 100%;
 }
 
 body {
@@ -29,7 +39,6 @@ body {
 }
 
 .app {
-  background-color: #99dabf;
   width: 100%;
   margin: 0px auto;
   display: -ms-grid;

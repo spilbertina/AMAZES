@@ -1,23 +1,23 @@
 header {
     grid-area: header;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 251, 0);
-}
+    background-color: rgb(0, 255, 21);
+    padding-left: 100px;
+    padding-right: 100px;
 
-h1 {
-    margin-left: 100px;
-    margin-right: 100px;
-    /*background-color: rgb(255, 0, 0);*/
-}
+    nav {
+        // margin-right: 100px;
 
-nav {
-    //    max-width: 30px;
-    //    max-height: 30px;
+        .blog {
+            margin-right: 200px;
+        }
 
-    img {
-        height: 30px;
+        img {
+            height: 30px;
+            margin-right: 20px;
 
+        }
     }
 }
