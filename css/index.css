@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -11,13 +12,26 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: montserrat;
   background-color: #00ff15;
   padding-left: 100px;
   padding-right: 100px;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+header .logo {
+  height: 34px;
+  width: 70px;
+  padding-top: 25px;
+  font-size: 2.5em;
+  line-height: 0px;
+  font-weight: 500;
 }
 
 header nav .blog {
   margin-right: 200px;
+  font-size: 1em;
 }
 
 header nav img {

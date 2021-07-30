@@ -3,21 +3,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: montserrat;
     background-color: rgb(0, 255, 21);
     padding-left: 100px;
     padding-right: 100px;
+    flex-basis: auto;
+
+    .logo {
+        height: 34px;
+        width: 70px;
+        padding-top: 25px;
+        font-size: 2.5em;
+        //обнулила междустрочный интервал, чтобы убрать зазор над буквами
+        line-height: 0px;
+        font-weight: 500;
+    }
 
     nav {
-        // margin-right: 100px;
-
         .blog {
             margin-right: 200px;
+            font-size: 1em;
         }
 
         img {
             height: 30px;
             margin-right: 20px;
-
         }
     }
 }
