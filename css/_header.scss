@@ -1,3 +1,6 @@
+$logo-height: 30px;
+
+
 header {
     grid-area: header;
     display: flex;
@@ -10,10 +13,10 @@ header {
     flex-basis: auto;
 
     .logo {
-        height: 30px;
+        height: $logo-height;
         //padding нужен для смещения лого вниз
-        padding-top: 20px;
-        font-size: 2.5em;
+        padding-top: $logo-height - 10px;
+        font-size: $logo-height + 10px;
         //обнулила междустрочный интервал, чтобы убрать зазор над буквами
         line-height: 0px;
         font-weight: 500;
@@ -26,7 +29,7 @@ header {
         }
 
         img {
-            height: 30px;
+            height: $logo-height;
             margin-right: 20px;
         }
     }
