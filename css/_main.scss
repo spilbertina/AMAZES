@@ -1,7 +1,11 @@
-.carousel {
+.intro {
+    @include divShow($isDebug);
+
     margin: 0 auto;
-    img {
+
+    .carousel {
         min-height: 700px;
         width: 100%;
+        background-color: gold;
     }
 }

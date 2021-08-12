@@ -13,11 +13,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: montserrat;
-  background-color: #00ff15;
-  padding-left: 100px;
-  padding-right: 100px;
+  background-color: #17c826;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 header .logo {
@@ -28,23 +29,43 @@ header .logo {
   font-weight: 500;
 }
 
-header nav .blog {
-  margin-right: 200px;
-  font-size: 1em;
-}
-
 header nav img {
   height: 30px;
   margin-right: 20px;
 }
 
-.carousel {
+.intro {
   margin: 0 auto;
 }
 
-.carousel img {
+.intro .carousel {
   min-height: 700px;
   width: 100%;
+  background-color: gold;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: montserrat;
+  background-color: #eeff00;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+footer nav img {
+  height: 30px;
+  margin-right: 20px;
 }
 
 body {

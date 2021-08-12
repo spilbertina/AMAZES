@@ -1,0 +1,19 @@
+footer {
+    @include divShow($isDebug);
+
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: montserrat;
+    background-color: $footer-background-color;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    nav {
+        img {
+            height: 30px;
+            margin-right: 20px;
+        }
+    }
+}

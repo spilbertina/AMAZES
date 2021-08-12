@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <rect id="Монтажная-область1" serif:id="Монтажная область1" x="0" y="0" width="1920" height="1080" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Монтажная-область11" serif:id="Монтажная область1" x="0" y="0" width="1920" height="1080"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g transform="matrix(0.999092,0,0,1.00008,1.13503,-1.12485)">
+            <rect x="-1.136" y="1.125" width="1921.74" height="1079.91" style="fill:rgb(74,177,226);"/>
+        </g>
+        <path d="M0,453.833C0,453.833 329.013,226.09 589.594,310.299C850.175,394.508 1048.68,660.901 1300.74,652.285C1634.86,640.864 1698.17,353.483 1920,241.873" style="fill:none;stroke:white;stroke-width:20px;"/>
+    </g>
+</svg>

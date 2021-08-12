@@ -1,0 +1,17 @@
+$logo-height: 30px;
+$header-background-color: rgb(23, 200, 38);
+$footer-background-color: rgb(238, 255, 0);
+
+$isDebug: false;
+
+// заливаем фон блока, если находимся в дебаге
+@mixin divShow($isDebug) {
+    @if($isDebug==true) {
+        &,
+        div {
+            background-color: honeydew !important;
+            opacity: 0.9;
+            border: 2px solid hotpink !important;
+        }
+    }
+}
