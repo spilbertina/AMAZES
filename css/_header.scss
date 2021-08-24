@@ -6,19 +6,14 @@ header {
     align-items: center;
     font-family: montserrat;
     background-color: $header-background-color;
-  //  padding-left: 100px;
-  //  padding-right: 100px;
     flex-basis: auto;
-   // top: 200px;
-   // left: 300px;
-   // width: 100%;
+    //width: 100%; ???
     position: sticky;
-  // position: fixed;
-   //height: 80px;
     top: 0px;
-    
+
     .logo {
         height: $logo-height;
+        padding-left: 100px;
         //padding нужен для смещения лого вниз
         padding-top: $logo-height - 10px;
         font-size: $logo-height + 10px;
@@ -28,6 +23,8 @@ header {
     }
 
     nav {
+        padding-right: 100px;
+
         img {
             height: $logo-height;
             margin-right: 20px;

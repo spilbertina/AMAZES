@@ -1,4 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+@font-face {
+  font-family: 'MBold';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'MLight';
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: 'MReg';
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'MMedi';
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -23,10 +43,15 @@ header {
 
 header .logo {
   height: 30px;
+  padding-left: 100px;
   padding-top: 20px;
   font-size: 40px;
   line-height: 0px;
   font-weight: 500;
+}
+
+header nav {
+  padding-right: 100px;
 }
 
 header nav img {
@@ -42,6 +67,170 @@ header nav img {
   min-height: 700px;
   width: 100%;
   background-color: gold;
+}
+
+.intro .button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 18vh;
+  background-color: yellowgreen;
+}
+
+.intro .button-area button {
+  border: none;
+  border-radius: 40px;
+  background-color: hotpink;
+  font-size: 30px;
+  color: white;
+  width: 310px;
+  height: 75px;
+  font-family: 'MMedi';
+}
+
+.mazes {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.mazes .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a6e4e4;
+  height: 20vh;
+  font-family: 'MReg';
+  font-size: 20px;
+}
+
+.mazes .all-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  background-color: #fad6a9;
+}
+
+.mazes .all-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 500px;
+  width: 300px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: mediumpurple;
+}
+
+.mazes .all-cards .card img {
+  height: 300px;
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mazes .all-cards .card .info {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+
+.mazes .all-cards .card .info h3 {
+  font-family: 'MMedi';
+}
+
+.mazes .all-cards .card .info p {
+  font-family: 'MReg';
+}
+
+.mazes .all-cards .card .info a {
+  font-family: 'MMedi';
+  font-size: 15px;
+  color: white;
+}
+
+.all-skills .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a6e4e4;
+  height: 20vh;
+  font-family: 'MReg';
+  font-size: 20px;
+}
+
+.all-skills .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  background-color: #fad6a9;
+}
+
+.all-skills .skills h3 {
+  font-family: 'MMedi';
+}
+
+.all-skills .button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 25vh;
+  background-color: yellowgreen;
+}
+
+.all-skills .button-area button {
+  border: none;
+  border-radius: 40px;
+  background-color: hotpink;
+  font-size: 30px;
+  color: white;
+  width: 310px;
+  height: 75px;
+  font-family: 'MMedi';
 }
 
 footer {
