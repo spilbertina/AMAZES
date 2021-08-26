@@ -79,8 +79,7 @@ header nav img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 18vh;
-  background-color: yellowgreen;
+  height: 17vh;
 }
 
 .intro .button-area button {
@@ -106,11 +105,10 @@ header nav img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #a6e4e4;
-  height: 20vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 17vh;
   font-family: 'MReg';
   font-size: 20px;
 }
@@ -126,7 +124,6 @@ header nav img {
       -ms-flex-align: center;
           align-items: center;
   height: 80vh;
-  background-color: #fad6a9;
 }
 
 .mazes .all-cards .card {
@@ -181,11 +178,10 @@ header nav img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #a6e4e4;
-  height: 20vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 12vh;
   font-family: 'MReg';
   font-size: 20px;
 }
@@ -200,12 +196,31 @@ header nav img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
-  background-color: #fad6a9;
+  height: 60vh;
+  padding-bottom: 50px;
+}
+
+.all-skills .skills .monster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-skills .skills .monster img {
+  width: 300px;
+  height: 300px;
 }
 
 .all-skills .skills h3 {
   font-family: 'MMedi';
+  font-size: 24px;
 }
 
 .all-skills .button-area {
@@ -218,8 +233,7 @@ header nav img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 25vh;
-  background-color: yellowgreen;
+  height: 20vh;
 }
 
 .all-skills .button-area button {
