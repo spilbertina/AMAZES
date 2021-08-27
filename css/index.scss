@@ -2,7 +2,7 @@
 @import './header';
 @import './main';
 @import './footer';
-@import './list-main';
+@import './list-games';
 
 
 body {
@@ -18,4 +18,42 @@ body {
     'main'
     'footer';
   grid-template-rows: 80px 1fr 80px;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "games   A    B"
+    "games   C    D";
+  //   'games type';
+  // // grid-template-rows: 1fr 1fr;
+  // grid-template-columns: 0.5fr 1fr;
+  // background-color: burlywood;
+
+  .games {
+    display: grid;
+    place-items: center;
+    grid-area: games;
+    background-color: skyblue;
+  }
+  .type-1 {
+    display: grid;
+    place-items: center;
+    grid-area: A;
+  }
+  .type-2 {
+    display: grid;
+    place-items: center;
+    grid-area: B;
+  }
+  .type-3 {
+    display: grid;
+    place-items: center;
+    grid-area: C; 
+  }
+  .type-3 {
+    display: grid;
+    place-items: center;
+    grid-area: D;
 }
