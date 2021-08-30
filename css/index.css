@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'MBold';
   src: url(../fonts/Montserrat-Bold.ttf);
@@ -272,20 +271,74 @@ footer nav img {
   margin-right: 20px;
 }
 
-.games {
-  grid-area: games;
-  background-color: coral;
-}
-
-.type {
-  grid-area: type;
+.wrapper {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 500px;
-  background-color: cornflowerblue;
+  min-height: calc(100vh - 160px);
+      grid-template-areas: "games   type-1    type-2" "games   type-3    type-4";
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+}
+
+.wrapper img {
+  height: 300px;
+  width: 300px;
+}
+
+.wrapper .info {
+  margin: 30px;
+}
+
+.wrapper .games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: games;
+  background-color: skyblue;
+}
+
+.wrapper .type-1, .wrapper .type-2, .wrapper .type-3, .wrapper .type-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 300px;
+  background-color: cyan;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.wrapper .type-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: type-1;
+}
+
+.wrapper .type-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: type-2;
+}
+
+.wrapper .type-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: type-3;
+}
+
+.wrapper .type-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: type-4;
 }
 
 body {
@@ -298,45 +351,7 @@ body {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'header' 'main' 'footer';
-  -ms-grid-rows: 80px 1fr 80px;
-      grid-template-rows: 80px 1fr 80px;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
-      grid-template-areas: "A A A A   A A A A   A A A A" "B B B B   B B B B   B B C C" "B B B B   B B B B   B B C C";
-}
-
-.wrapper [class^="box-"] {
-  background-color: skyblue;
-  /* Размещаем контейнеры по центру */
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-.wrapper .type-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-area: A;
-}
-
-.wrapper .type-2 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-area: B;
-}
-
-.wrapper .type-3 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 11;
-  -ms-grid-column-span: 2;
-  grid-area: C;
+  -ms-grid-rows: 80px auto 80px;
+      grid-template-rows: 80px auto 80px;
 }
 /*# sourceMappingURL=index.css.map */
